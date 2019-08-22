@@ -1,0 +1,2316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Crash Course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+    <style>
+        h5{
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        h5 span{
+            text-transform: lowercase;
+        }
+
+        .course-heading{
+            text-align: center;
+            text-transform: uppercase;
+            color: #7A43B6;
+            border: 5px solid #7A43B6;
+            margin: 50px 0;
+            padding: 10px;
+        }
+
+        .bd-highlight {
+            background-color: rgba(86,61,124,0.15);
+            border: 1px solid rgba(86,61,125,0.15);
+        }
+
+        .height {
+            height: 100px;
+        }
+
+        .width {
+            width: 300px;
+        }
+
+        /*Extra small devices (portrait phones, less than 576px)*/
+        /*No media query for `xs` since this is the default in Bootstrap*/
+
+        /*Small (-sm-) devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) {
+
+        }
+        /*Medium (-md-) devices (tablets, 768px and up)*/
+        @media (min-width: 768px) {
+
+        }
+        /*Large (-lg-) devices (desktops, 992px and up)*/
+        @media (min-width: 992px) {
+
+        }
+        /*Extra large (-xl-) devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {
+
+        }
+    </style>
+</head>
+<body>
+<!--Most commonly used utilities-->
+<div class="container">
+
+    <!--Spacing - Margin & Padding-->
+    <h3 class="course-heading">Margins</h3>
+    
+    <h5>Margin on all sides - <span>.m</span></h5>
+    <div class="bg-primary m-0">.m-0</div>
+    <div class="bg-primary m-1">.m-1</div>
+    <div class="bg-primary m-2">.m-2</div>
+    <div class="bg-primary m-3">.m-3</div>
+    <div class="bg-primary m-4">.m-4</div>
+    <div class="bg-primary m-5">.m-5</div>
+    <div class="bg-primary m-auto">.m-auto</div>
+
+    <h5>Margin on left - <span>.ml</span></h5>
+    <div class="bg-primary ml-0">.ml-0</div>
+    <div class="bg-primary ml-1">.ml-l</div>
+    <div class="bg-primary ml-2">.ml-2</div>
+    <div class="bg-primary ml-3">.ml-3</div>
+    <div class="bg-primary ml-4">.ml-4</div>
+    <div class="bg-primary ml-5">.ml-5</div>
+    <div class="bg-primary ml-auto">.ml-auto</div>
+
+    <h5>Margin on right - <span>.mr</span></h5>
+    <div class="bg-primary mr-0">.mr-0</div>
+    <div class="bg-primary mr-1">.mr-l</div>
+    <div class="bg-primary mr-2">.mr-2</div>
+    <div class="bg-primary mr-3">.mr-3</div>
+    <div class="bg-primary mr-4">.mr-4</div>
+    <div class="bg-primary mr-5">.mr-5</div>
+    <div class="bg-primary mr-auto">.mr-auto</div>
+
+    <h5>Margin on top - <span>.mt</span></h5>
+    <div class="bg-primary mt-0">.mt-0</div>
+    <div class="bg-primary mt-1">.mt-l</div>
+    <div class="bg-primary mt-2">.mt-2</div>
+    <div class="bg-primary mt-3">.mt-3</div>
+    <div class="bg-primary mt-4">.mt-4</div>
+    <div class="bg-primary mt-5">.mt-5</div>
+    <div class="bg-primary mt-auto">.mt-auto</div>
+
+    <h5>Margin on bottom - <span>.mb</span></h5>
+    <div class="bg-primary mb-0">.mb-0</div>
+    <div class="bg-primary mb-1">.mb-l</div>
+    <div class="bg-primary mb-2">.mb-2</div>
+    <div class="bg-primary mb-3">.mb-3</div>
+    <div class="bg-primary mb-4">.mb-4</div>
+    <div class="bg-primary mb-5">.mb-5</div>
+    <div class="bg-primary mb-auto">.mb-auto</div>
+
+    <h5>Margin on right AND left - <span>.mx</span></h5>
+    <div class="bg-primary mx-0">.mx-0</div>
+    <div class="bg-primary mx-1">.mx-l</div>
+    <div class="bg-primary mx-2">.mx-2</div>
+    <div class="bg-primary mx-3">.mx-3</div>
+    <div class="bg-primary mx-4">.mx-4</div>
+    <div class="bg-primary mx-5">.mx-5</div>
+    <div class="bg-primary mx-auto">.mx-auto</div>
+
+    <h5>Margin on top AND bottom - <span>.my</span></h5>
+    <div class="bg-primary my-0">.my-0</div>
+    <div class="bg-primary my-1">.my-l</div>
+    <div class="bg-primary my-2">.my-2</div>
+    <div class="bg-primary my-3">.my-3</div>
+    <div class="bg-primary my-4">.my-4</div>
+    <div class="bg-primary my-5">.my-5</div>
+    <div class="bg-primary my-auto">.my-auto</div>
+
+    <!-- Padding -->    
+    <h3 class="course-heading">Padding</h3>
+
+    <h5>Padding on all sides - <span>.p</span></h5>
+    <div class="bg-primary p-0">.p-0</div>
+    <div class="bg-primary p-1">.p-1</div>
+    <div class="bg-primary p-2">.p-2</div>
+    <div class="bg-primary p-3">.p-3</div>
+    <div class="bg-primary p-4">.p-4</div>
+    <div class="bg-primary p-5">.p-5</div>
+    <div class="bg-primary p-auto">.p-auto</div>
+
+    <h5>Padding on left - <span>.pl</span></h5>
+    <div class="bg-primary pl-0">.pl-0</div>
+    <div class="bg-primary pl-1">.pl-l</div>
+    <div class="bg-primary pl-2">.pl-2</div>
+    <div class="bg-primary pl-3">.pl-3</div>
+    <div class="bg-primary pl-4">.pl-4</div>
+    <div class="bg-primary pl-5">.pl-5</div>
+    <div class="bg-primary pl-auto">.pl-auto</div>
+
+    <h5>Padding on right - <span>.pr</span></h5>
+    <div class="bg-primary pr-0">.pr-0</div>
+    <div class="bg-primary pr-1">.pr-l</div>
+    <div class="bg-primary pr-2">.pr-2</div>
+    <div class="bg-primary pr-3">.pr-3</div>
+    <div class="bg-primary pr-4">.pr-4</div>
+    <div class="bg-primary pr-5">.pr-5</div>
+    <div class="bg-primary pr-auto">.pr-auto</div>
+
+    <h5>Padding on top - <span>.pt</span></h5>
+    <div class="bg-primary pt-0">.pt-0</div>
+    <div class="bg-primary pt-1">.pt-l</div>
+    <div class="bg-primary pt-2">.pt-2</div>
+    <div class="bg-primary pt-3">.pt-3</div>
+    <div class="bg-primary pt-4">.pt-4</div>
+    <div class="bg-primary pt-5">.pt-5</div>
+    <div class="bg-primary pt-auto">.pt-auto</div>
+
+    <h5>Padding on bottom - <span>.pb</span></h5>
+    <div class="bg-primary pb-0">.pb-0</div>
+    <div class="bg-primary pb-1">.pb-l</div>
+    <div class="bg-primary pb-2">.pb-2</div>
+    <div class="bg-primary pb-3">.pb-3</div>
+    <div class="bg-primary pb-4">.pb-4</div>
+    <div class="bg-primary pb-5">.pb-5</div>
+    <div class="bg-primary pb-auto">.pb-auto</div>
+
+    <h5>Padding on right AND left - <span>.pb</span></h5>
+    <div class="bg-primary px-0">.px-0</div>
+    <div class="bg-primary px-1">.px-l</div>
+    <div class="bg-primary px-2">.px-2</div>
+    <div class="bg-primary px-3">.px-3</div>
+    <div class="bg-primary px-4">.px-4</div>
+    <div class="bg-primary px-5">.px-5</div>
+    <div class="bg-primary px-auto">.px-auto</div>
+
+    <h5>Padding on top AND bottom - <span>.pb</span></h5>
+    <div class="bg-primary py-0">.py-0</div>
+    <div class="bg-primary py-1">.py-l</div>
+    <div class="bg-primary py-2">.py-2</div>
+    <div class="bg-primary py-3">.py-3</div>
+    <div class="bg-primary py-4">.py-4</div>
+    <div class="bg-primary py-5">.py-5</div>
+    <div class="bg-primary py-auto">.py-auto</div>
+
+    <h5>Horizontal Centering</h5>
+    <div class="bg-primary mx-auto" style="width: 100px">Centered</div>
+
+    <!--TEXT ALIGNMENT-->
+    <!--Easily realign text to components with text alignment classes.-->
+    <h3 class="course-heading">Text Alignment</h3>
+
+    <p class="text-left">Left aligned text on all viewport sizes</p>
+    <p class="text-center">Center aligned text on all viewport sizes</p>
+    <p class="text-right">Right aligned text on all viewport sizes</p>
+
+    <p class="text-sm-left">Left aligned text on viewports sized SM or wider</p>
+    <p class="text-sm-right">Right aligned text on viewports sized SM or wider</p>
+    <p class="text-lg-center">Center aligned text on viewports sized LG or wider</p>
+    <p class="text-left text-md-center text-lg-right text-xl-center">Left on under MD, center on MD, right on LG, center on XL</p>
+
+
+    <!-- Text wrapping and overflow -->
+    <h3 class="course-heading">Text Wrapping and Overflow</h3>
+
+    <h5>Textwrap</h5>
+    <div class="badge badge-primary text-wrap" style="width: 6rem">This text should wrap</div>
+
+    <h5>Overflow</h5>
+    <div class="text-nowrap badge badge-primary" style="width: 8rem">This text should overflow the parent</div>
+
+    <h5>Truncation</h5>
+    <div class="col-6 text-truncate">Truncation puts ellipsis when the text gets too big to fit within the parent element</div>
+
+    <h5>Word Break</h5>
+    <div><b>No .text-break</b></div>
+    <p>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+    <div><b>VS.</b></div><br>
+    <div><b>With .text-break</b></div>
+    <p class='text-break'>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+
+    <!--TEXT TRANSFORMS-->
+    <!--Transform text in components with text capitalization classes.-->
+    <h3 class="course-heading">Text transforms</h3>
+
+    <p class="text-lowercase">Lowercased Text</p>
+    <p class="text-uppercase">Uppercased Text</p>
+    <p class="text-capitalize">capItalizEd teXt</p>
+
+    <!--Font weight and italics-->
+    <!--Quickly change the weight (boldness) of text or italicize text.-->
+    <h3 class="course-heading">Font weight & italics</h3>
+
+    <p class="font-weight-bold">Bold Text</p>
+    <p class="font-weight-bolder">Bolder weight text (relative to parent element)</p>
+    <p class="font-weight-normal">Normal weight text</p>
+    <p class="font-weight-light">Light weight text</p>
+    <p class="font-weight-lighter">Lighter weight text (relative to parent element)</p>
+    <p class="font-italic">Italic Text</p>
+
+    <h5>Monospace</h5>
+    <p class="text-monospace">This is monospaced text</p>
+
+    <h5>Reset Color</h5>
+    <p>Reset text or link's color to inherit color from parent</p>
+    <p class="text-muted">Muted text with a <a href="#" class="text-reset">text-reset link (scroll over)</a> which looks like the rest of the text</p>
+
+    <h5>Text Decoration (None)</h5>
+    <a href="#" class="text-decoration-none">Non-Underlined Link</a>
+
+    <!--Fancy Heading Text-->
+    <!--Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a display heading—a larger, slightly more opinionated heading style.-->
+    <h3 class="course-heading">Fancy heading text</h3>
+    <div class="display-1">Display 1</div>
+    <div class="display-2">Display 2</div>
+    <div class="display-3">Display 3</div>
+    <div class="display-4">Display 4</div>
+
+    <!--Fancy paragraph Text-->
+    <!--Make a paragraph stand out by adding .lead.-->
+    <h3 class="course-heading">Fancy paragraph text</h3>
+
+    <div>Paragraph without using .lead</div>
+    <div class="lead">Paragraph with using .lead</div>
+
+
+    <!-- TEXT UTILITIES -->
+    <h3 class="course-heading">Text Utilities</h3>
+    <h5>Abbreviations</h5>
+
+    <p><abbr title="attribute">attr</abbr></p>
+    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+
+    <h5>Blockquotes</h5>
+    <blockquote class="blockquote text-center">
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer text-right">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+
+
+    <h5>Lists</h5>
+        <p><b>Unstyled</b></p>
+        <ul class="list-unstyled">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <ul>
+            <li>Sub 1</li>
+            <li>Sub 2</li>
+            <li>Sub 3</li>
+        </ul>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        </ul>
+        <p><b>Inline</b></p>
+        <ul class="list-inline">
+            <li class="list-inline-item">Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+        </ul>
+
+        <p class='text-center' style="border: 1px solid black"><b>Description List Alignment</b></p>
+        <div class="row">
+            <dt class="col-sm-3">Descriptions Lists</dt>
+            <dd class="col-sm-9">A description list is perfect for defining terms</dd>
+            <dt class="col-sm-3">Euismod</dt>
+            <dd class="col-sm-9">A description list is perfect for defining terms</dd>
+            <dt class="col-sm-3 text-truncate">Talk too much? Text-truncate can help with that.</dt>
+            <dd class="col-sm-9">All fixed</dd>
+            <dt class="col-sm-3">Nesting</dt>
+            <dd class="col-sm-9">
+                <dl class="row">
+                    <dt class="col-sm-4">Nested Definition List</dt>
+                    <dd class="col-sm-8">There's some more crap over here, too.</dd>
+                </dl>
+            </dd>
+        </div>
+
+    <!--TEXT COLORS-->
+    <!--Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.-->
+    <h3 class="course-heading">Text colors</h3>
+    <p class='text-primary'>This is .text-primary</p>
+    <p class='text-secondary'>This is .text-secondary</p>
+    <p class='text-success'>This is .text-success</p>
+    <p class='text-danger'>This is .text-danger</p>
+    <p class='text-warning'>This is .text-warning</p>
+    <p class='text-info'>This is .text-info</p>
+    <p class="text-light bg-dark">This is .text-light .bg-dark</p>
+    <p class="text-dark">This is .text-dark</p>
+    <p class="text-body">This is .text-body</p>
+    <p class="text-muted">This is .text-muted</p>
+    <p class="text-white bg-dark">This is .text-white .bg-dark</p>
+    <p class="text-black-50">This is .text-black-50</p>
+    <p class="text-white-50 bg-dark">This is .text-white-50 .bg-dark</p>
+
+
+    <!--BACKGROUND COLORS-->
+    <!--Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. Background utilities do not set color, so in some cases you’ll want to use .text-* utilities.-->
+    <h3 class="course-heading">Background colors</h3>
+    <div class="text-center" style="font-size:28px"><b>.bg</b></div>
+
+
+    <div class="p-3 mb-2 bg-primary text-white">.p-3 .mb-2 .bg-primary .text-white</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.p-3 .mb-2 .bg-secondary .text-white</div>
+    <div class="p-3 mb-2 bg-success text-white">.p-3 .mb-2 .bg-success .text-white</div>
+    <div class="p-3 mb-2 bg-danger text-white">.p-3 .mb-2 .bg-danger .text-white</div>
+    <div class="p-3 mb-2 bg-warning text-white">.p-3 .mb-2 .bg-warning .text-white</div>
+    <div class="p-3 mb-2 bg-info text-white">.p-3 .mb-2 .bg-info .text-white</div>
+    <div class="p-3 mb-2 bg-light text-dark">.p-3 .mb-2 .bg-light .text-dark</div>
+    <div class="p-3 mb-2 bg-dark text-white">.p-3 .mb-2 .bg-dark .text-white</div>
+    <div class="p-3 mb-2 bg-white text-dark">.p-3 .mb-2 .bg-white .text-dark</div>
+    <div class="p-3 mb-2 bg-transparent text-dark">.p-3 .mb-2 .bg-transparent .text-dark</div>
+
+    <!--Display property-->
+    <!--Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.-->
+    <h3 class="course-heading">Display properties</h3>
+
+    <div class="text-center" style="font-size:28px"><b>.d</b></div>
+    <div class="col-3 m-3 text-center"><b>.inline</b></div>
+    <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+    <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+
+    <br><br>
+
+    <div class="col-3 m-3 text-center"><strong>.inline-block</strong></div>
+    <div class="d-inline-block p-2 bg-primary text-white">d-inline-block</div>
+    <div class="d-inline-block p-2 bg-dark text-white">d-inline-block</div>
+
+    <br><br>
+
+    <div class="col-3 m-3 text-center"><b>.block</b></div>
+    <div class="d-block p-2 bg-primary text-white">d-block</div>
+    <div class="d-block p-2 bg-dark text-white">d-block</div>
+
+    <br>
+
+    <div class="col-3 m-3 text-center"><b>.table</b></div>
+    <div class="d-table p-2 bg-primary text-white">d-table</div>
+    <div class="d-table p-2 bg-dark text-white">d-table</div>
+
+    <div class="d-table m-2 p-2 bg-primary text-white">
+        <div class="d-table-row p-2 bg-warning text-white">
+            <div class="d-table-cell p-2 bg-secondary">Heading 1</div>
+            <div class="d-table-cell p-2 bg-success">Heading 2</div>
+        </div>
+        <div class="d-table-row bg-info text-white">
+            <div class="d-table-cell p-2 bg-danger text-white text-center">Item 1</div>
+            <div class="d-table-cell p-2 bg-secondary text-white text-center">Item 2</div>
+        </div>
+    </div>
+
+    <div class="col-3 m-3 text-center"><b>Hiding Elements</b></div>
+    
+    <div class="row">
+            <div class="d-none mr-3">Hidden on All Screens</div>
+            <div>.d-none</div>
+    </div>
+    <div class="row">
+            <div class="bd-highlight d-none d-sm-block mr-3" style="width:100px;height:100px">Hidden on XS</div>
+            <div>.d-none.d-sm-block</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-sm-none d-md-block mr-3" style="width:100px;height:100px">Hidden on SM</div>
+        <div>.d-sm-none.d-md-block</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-md-none d-lg-block mr-3" style="width:100px;height:100px">Hidden on MD</div>
+        <div>.d-none.d-sm-block</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-lg-none d-xl-block mr-3" style="width:100px;height:100px">Hidden on LG</div>
+        <div>.d-none.d-sm-block</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-xl-none mr-3" style="width:100px;height:100px">Hidden on XL</div>
+        <div>.d-none.d-sm-block</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-block mr-3" style="width:100px;height:100px">Visible on All</div>
+        <div>.d-block</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-block d-sm-none mr-3" style="width:100px;height:100px">Visible only XS</div>
+        <div>.d-block.d-sm-none</div>
+    </div>
+    <div class="row">
+        <div class="bd-highlight d-none d-sm-block d-md-none mr-3" style="width:100px;height:100px">Visible only SM</div>
+        <div>.d-none.d-sm-block.d-md-none</div>
+    </div>
+    <div class="row">
+    <div class="d-none d-md-block d-lg-none mr-3">Visible only MD</div><div>.d-none.d-md-block.d-lg-none</div>
+    </div>
+    <div class="row">
+    <div class="d-none d-lg-block d-xl-none mr-3">Visible only LG</div><div>.d-none.d-sm-block</div>
+    </div>
+    <div class="row">
+    <div class="d-none d-xl-block mr-3">Visible only XL</div><div>.d-none.d-sm-block</div>
+    </div>
+
+    <!--Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.-->
+
+    <!--Use justify-content utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, center, between, or around.-->
+
+    <!--Use align-items utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column). Choose from start, end, center, baseline, or stretch (browser default).-->
+
+    <h3 class="course-heading">Flexbox</h3>
+
+    <div class="d-flex p-2 bg-dark text-white-50">I'm a flexbox container</div>
+    <div class="d-inline-flex p-2 bg-primary">I'm an inline flexbox container</div>
+    
+    <h5>Direction</h5>
+
+    <div class="col-3 m-3 text-center"><b>.flex-row</b></div>
+
+    <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <div class="d-flex flex-row-reverse bd-highlight">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <div class="col-3 m-3 text-center"><b>.flex-column</b></div>
+    <div class="d-flex flex-column bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <div class="col-3 m-3 text-center"><b>.flex-column-reverse</b></div>
+    <div class="d-flex flex-column-reverse bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <div class="col-3 m-3 text-center"><b>.flex-sm-column .flex-md-row</b></div>
+
+    <div class="d-flex flex-md-row flex-sm-column bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Flex item 1</div>
+        <div class="p-2 bd-highlight">Flex item 2</div>
+        <div class="p-2 bd-highlight">Flex item 3</div>
+    </div>
+
+    <h5>Justify Content</h5>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.justify-content-start</b></div>
+
+    <div class="col-8 d-flex justify-content-start bd-highlight">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+
+</div>
+<div class="row m-1">
+
+    <div class="col-3 m-3 text-center"><b>.justify-content-end</b></div>
+
+    <div class="col-8 d-flex justify-content-end bd-highlight">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+
+</div>  
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.justify-content-center</b></div>
+
+    <div class="col-8 d-flex justify-content-center bd-highlight">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+
+</div>  
+
+<div class='row m-1'>
+    <div class="col-3 m-3 text-center"><b>.justify-content-between</b></div>
+
+    <div class="col-8 d-flex justify-content-between bd-highlight">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class='row m-1'>
+
+    <div class="col-3 m-3 text-center"><b>.justify-content-around</b></div>
+
+    <div class="col-8 d-flex justify-content-around bd-highlight">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+
+    <h5>Align Items</h5>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-items-start</b></div>
+
+        <div class=" col-8 d-flex align-items-start bd-highlight height">
+            <div class="p-2 bd-highlight">Flex item</div>
+            <div class="p-2 bd-highlight">Flex item</div>
+            <div class="p-2 bd-highlight">Flex item</div>
+        </div>
+</div>      
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-items-end</b></div>
+
+    <div class="col-8 d-flex align-items-end bd-highlight height">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-items-center</b></div>
+
+    <div class="col-8 d-flex align-items-center bd-highlight height">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-items-baseline</b></div>
+
+    <div class="col-8 d-flex align-items-baseline bd-highlight height">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-items-stretch</b></div>
+
+    <div class="col-8 d-flex align-items-stretch bd-highlight height">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+    <h5>Align Self</h5>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-self-start</b></div>
+
+    <div class="col-8 d-flex bd-highlight" style="height:100px">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 align-self-start bd-highlight">Aligned flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-self-end</b></div>
+    <div class="col-8 d-flex bd-highlight" style="height:100px">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 .align-self-end bd-highlight">Aligned flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-self-center</b></div>
+    <div class="col-8 d-flex bd-highlight" style="height:100px">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 align-self-center bd-highlight">Aligned flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-self-baseline</b></div>
+    <div class="col-8 d-flex bd-highlight" style="height:100px">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 align-self-baseline bd-highlight">Aligned flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+<div class="row m-1">
+    <div class="col-3 m-3 text-center"><b>.align-self-stretch</b></div>
+    <div class="col-8 d-flex bd-highlight" style="height:100px">
+        <div class="p-2 bd-highlight">Flex item</div>
+        <div class="p-2 align-self-stretch bd-highlight">Aligned flex item</div>
+        <div class="p-2 bd-highlight">Flex item</div>
+    </div>
+</div>
+
+    <h5>Fill</h5>
+
+<div class="d-flex bd-highlight">
+    <div class="p-2 flex-fill bd-highlight">All these flex boxes are formatted the same</div>
+    <div class="p-2 flex-fill bd-highlight">using</div>
+    <div class="p-2 flex-fill bd-highlight">.flex-fill</div>
+</div>
+<div class="mt-3 d-flex bd-highlight">
+    <div class="p-2 bd-highlight">All these flex boxes are formatted the same</div>
+    <div class="p-2 bd-highlight">without using</div>
+    <div class="p-2 bd-highlight">.flex-fill</div>
+</div>
+
+    <h5>Order</h5>
+
+<div class="d-flex flex-nowrap bd-highlight">
+    <div class="order-3 p-2 bd-highlight">First Flex Item</div>
+    <div class="order-2 p-2 bd-highlight">Second Flex Item</div>
+    <div class="order-1 p-2 bd-highlight">Third Flex Item</div>
+</div>
+
+    <!--Border-radius-->
+    <!--Add classes to an element to easily round its corners.-->
+    <h3 class="course-heading">Border-radius</h3>
+<div class="row">
+<div class="col-3">
+    <div class='m-3'><b>No class</b></div><img src="https://via.placeholder.com/150.png">
+</div>
+<div class='col-3'>
+    <div class='m-3'><b>.rounded</b></div><img src="https://via.placeholder.com/150.png" class='rounded'>
+</div>
+<div class="col-3">
+    <div class='m-3'><b>.rounded-top</b></div><img src="https://via.placeholder.com/150.png" class='rounded-top'>
+</div>
+<div class="col-3">
+    <div class='m-3'><b>.rounded-right</b></div><img src="https://via.placeholder.com/150.png" class='rounded-right'>
+</div>
+<div class='col-3'>
+    <div class='m-3'><b>.rounded-bottom</b></div><img src="https://via.placeholder.com/150.png" class='rounded-bottom'>
+</div>
+<div class='col-3'>
+    <div class='m-3'><b>.rounded-left</b></div><img src="https://via.placeholder.com/150.png" class='rounded-left'>
+</div>
+<div class="col-3">
+    <div class='m-3'><b>.rounded-circle</b></div><img src="https://via.placeholder.com/150.png" class='rounded-circle'>
+</div>
+<div class="col-3">
+    <div class='m-3'><b>.rounded-pill</b></div><img src="https://via.placeholder.com/250X150.png" class='rounded-pill'>
+</div>
+<div class="col-3">
+    <div class='m-3'><b>.rounded-0</b></div><img src="https://via.placeholder.com/150.png" class='rounded-0'>
+</div>
+</div>
+
+    <!--Box Shadow-->
+    <!--Add or remove shadows to elements with box-shadow utilities.-->
+    <h3 class="course-heading">Box Shadow</h3>
+
+    <div class="shadow-none p-3 mb-5 bg-light rounded">No Shadow</div>
+    <div class="shadow-sm p-3 mb-5 bg-light rounded">Small Shadow</div>
+    <div class="shadow p-3 mb-5 bg-light rounded">Regular Shadow</div>
+    <div class="shadow-lg p-3 mb-5 bg-light rounded">Large Shadow</div>
+
+    <!--width and height-->
+    <!--Easily make an element as wide or as tall (relative to its parent) with our width and height utilities.-->
+    <h3 class="course-heading">Width & Height</h3>
+
+    <div class='m-3' style="height: 100px; background-color: rgba(255,0,0,0.1);">
+        <div class="h-25 d-inline-block" style="width:120px; background-color:rgba(0,0,225,0.1)">Height 25%</div>
+        <div class="h-50 d-inline-block" style="width:120px; background-color:rgba(0,0,225,0.1)">Height 50%</div>
+        <div class="h-75 d-inline-block" style="width:120px; background-color:rgba(0,0,225,0.1)">Height 75%</div>
+        <div class="h-100 d-inline-block" style="width:120px; background-color:rgba(0,0,225,0.1)">Height 100%</div>
+        <div class="h-auto d-inline-block" style="width:120px; background-color:rgba(0,0,225,0.1)">Height auto</div>
+    </div>
+
+    <div class='m-3 bd-highlight' style="height:100px">
+        <div class="mw-100 bd-highlight">Max-width 100%</div>
+    </div>
+
+    <div class="m-3 bd-highlight" style="height:100px">
+        <div class="mh-100" style="width:100px;height:200px;background-color:pink">Max-height 100%</div>
+    </div>
+
+    <!--Buttons-->
+    <!--Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.-->
+    <h3 class="course-heading">Buttons</h3>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <h5>Button Tags</h5>
+    <a href="#" class="btn btn-primary">Link Button</a>
+    <button class="btn btn-primary" type='submit'>Button Button</button>
+    <input type="button" class="btn btn-primary" value="Input Button">
+    <input type="submit" class="btn btn-primary" value="Submit Button">
+    <input type="reset" class="btn btn-primary" value="Reset Button">
+
+    <h5>Outline</h5>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    <h5>Sizes</h5>
+
+    <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+    <button type="button" class="btn btn-primary btn-lg">Large Button</button>
+    <button type="button" class="btn btn-primary btn-sm">Large Button</button>
+    <button type="button" class="btn btn-primary btn-sm">Large Button</button>
+    <button type="button" class="btn btn-primary btn-md">Medium Button</button>
+    <button type="button" class="btn btn-primary btn-md">Medium Button</button>
+
+    <div class="mt-3 bd-highlight" style="width: 500px; height: 140px;">
+        <button class="btn btn-primary btn-lg btn-block" type="button">Block Level Buttons</button>
+        <button class="btn btn-outline-warning btn-lg btn-block text-dark" type="button">Span Entire Parent Element</button>
+    </div>    
+
+    <h5>Active State</h5>
+
+    <a href="#" class="btn btn-primary btn-lg" role="button" aria-pressed="false">Primary Link </a>
+    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary Link Active</a>
+    <button class="btn btn-secondary btn-lg" role="button" aria-pressed="false">Inactive Button</button>
+    <button class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Active Button</button>
+
+    <h5>Disabled State</h5>
+    <button class="btn btn-lg btn-primary" type="button">Primary Button</button>
+    <button class="btn btn-lg btn-primary" type="button" disabled>Disabled Primary Button</button>
+    <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Disabled Primary Link</a>
+    <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Disabled Secondary Link</a>
+
+    <h5>Toggle State</h5>
+    <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Toggle Button</button>
+
+    
+
+    <h5>Checkboxes and Radio Buttons</h5>
+
+    <div class="btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input type="checkbox" checked autocomplete="off">Checked
+        </label>
+    </div>
+
+    <div class="mt-3 btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off">Active
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Radio
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Radio
+        </label>
+    </div>
+
+    <h5>Methods</h5>
+
+    <button id="togglable" type="button" class="btn btn-info">Togglable Button</button>
+    <button type="button" class="btn btn-success" onclick="$('#togglable').button('toggle')">Toggle Left Button</button>
+
+    <!--Cards-->
+    <!--A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.-->
+    <h3 class="course-heading">Cards & Card groups</h3>
+
+    <h5>Content Types</h5>
+    <h6>Body</h6>
+
+    <div class="card mb-3">
+        <div class=" card-body">This is some text within a card body.</div>
+    </div>
+
+<div class="row">
+    <div class="col-6">
+
+        <h6>Titles, text, and links</h6>
+
+        <div class="card mb-3" style="width:18rem">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's contents.</p>
+                <a href="" class="card-link">Card Link</a>
+                <a href="" class="card-link">Other Card Link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+
+        <h6>Images</h6>
+
+        <div class="card mb-3" style="width:18rem">
+            <img src="https://via.placeholder.com/150.png" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's contents.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <h6>List groups</h6>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card" style="width:18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum et geros</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card" style="width:18rem">
+            <div class="card-header">Featured</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo dios</li>
+                <li class="list-group-item">Erates hulo spena</li>
+                <li class="list-group-item">Vesitible aurom nostro</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6 mt-3">
+
+        <h6>Kitchen Sink</h6>
+        <div class="card mt-3 mb-3" style="width:18rem">
+            <img src="https://via.placeholder.com/150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title mt-0">Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's contents.</p>
+            </div>
+            <div class="card-header">Featured</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Item 1</li>
+                    <li class="list-group-item">Item 2</li>
+                    <li class="list-group-item">Item 3</li>
+                </ul>
+        </div>
+
+    </div>
+    <div class="col-6 mt-3">
+
+        <h6>Header and Footer</h6>
+
+        <div class="card mt-3">
+            <div class="card-header">Featured</div>
+            <div class="card-body">
+                <h5 class="card-title">Title Goes Here</h5>
+                <p class="card-text">Some other text to simply fill up a bunch of otherwise blank space.</p>
+                <a href="#" class="btn btn-primary">Random Button To Click. Fun!</a>
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-header">Famous Quote</div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Farm-to-table keytar XOXO echo park lumbersexual affogato dreamcatcher. </p>
+                    <footer class="blockquote-footer mb-3">Hipster</footer>
+                    <footer class='card-footer bd-highlight'><i>"What Hipsters Say"</i> by Thistle Berry</footer>
+                </blockquote>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <h5>Sizing</h5>
+
+    <h6>Using Grid Markup</h6>
+
+<div class="row mb-3">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special Title Treatment</h5>
+                <p class="card-text">These cards are within col-6 divs with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go Somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special Title Treatment</h5>
+                <p class="card-text">These cards are within col-6 divs with supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go Somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <h6>Using Utilities</h6>
+
+<div class="mb-3 row">
+    <div class="card w-50">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">These cards are using surrounding divs with .w-50</p>
+            <a href="" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+    <div class="card w-50">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">These cards are using surrounding divs with .w-50</p>
+            <a href="" class="btn btn-primary">Button</a>
+        </div>
+    </div>
+</div>
+
+    <h6>Using Custom CSS</h6>
+
+<div class="row">
+    <div class="card m-3" style="width:20rem">
+        <div class="card-body">
+            <h5 class="card-title">Special Title Treatment</h5>
+            <p class="card-text">These cards are using a style of "width:20rem;" and class of m-3</p>
+            <a href="" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    </div>
+    <div class="card m-3" style="width:20rem">
+        <div class="card-body">
+            <h5 class="card-title">Special Title Treatment</h5>
+            <p class="card-text">These cards are using a style of "width:20rem;" and class of m-3</p>
+            <a href="" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    </div>
+</div>
+
+    <h5>Text Alignment</h5>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Special Title Treatment</h5>
+            <p class="card-text">Card with no class.</p>
+            <a href="#" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    </div>
+    <div class="card text-center mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Special Title Treatment</h5>
+            <p class="card-text">Card with .text-center.</p>
+            <a href="#" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    </div>
+    <div class="card text-right mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Special Title Treatment</h5>
+            <p class="card-text">Card with .text-right.</p>
+            <a href="#" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    </div>
+
+    <h5>Navigation</h5>
+
+<div class='row'>
+
+    <div class="col-6">
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a href="#active" class="nav-link active" data-toggle="tab">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#link" class="nav-link" data-toggle="tab">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link disabled" tabindex="-1" aria-disable="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="active">
+                    <div class="card-body">
+                        <h5 class="card-title">Special Title Treatment</h5>
+                        <p class="card-text">With supporting ...</p>
+                        <a href="" class="btn btn-primary">Go Somewhere</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="link">
+                    <div class="card-body">
+                        <h5 class="card-title">Other Special</h5>
+                        <p class="card-text">...text to add bulk ...</p>
+                        <a href="" class="btn btn-secondary">Go Somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card text-center">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Active</a>
+                </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link</a>
+                </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link disabled">Disabled</a>
+                </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special Title Treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="" class="btn btn-primary">Go Somewhere</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <h5>Images</h5>
+    <h6>Image Caps</h6>
+    
+    <div class="card mb-3">
+        <img src="https://via.placeholder.com/200X50.png" alt="" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <img src="https://via.placeholder.com/200X50.png" alt="" class="card-img-top">
+    </div>
+
+    <h6>Image Overlays</h6>
+
+
+<!-- Figure out how to format card to the size of the image rather than the other way around -->
+<!-- The answer seems to be using custom CSS to ensure div is exactly the same size as picture -->
+    <div class="card bg-dark text-white" style="width:500px;height:200px;">
+        <img src="https://via.placeholder.com/500X200.png" alt="" class="card-img">
+        <div class="card-img-overlay">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-light">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+
+    <h5>Horizontal</h5>
+
+    <div class="card mb-3" style="max-width:540px;">
+        <div class="row no-gutters">
+            <div class="col-4"><img src="https://via.placeholder.com/200X300.png" alt="" class="card-img"></div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5>Card Styles</h5>
+    <h6>Background and Color</h6>
+
+<div class="row">
+ 
+    <div class="col-3">
+        <div class="card text-white bg-primary mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Primary Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-white bg-secondary mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Secondary Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-white bg-success mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Success Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-white bg-danger mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Danger Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-white bg-warning mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Warning Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-white bg-info mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Info Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+       <div class="col-3">
+        <div class="card text-black bg-light  mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Light Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card text-white bg-dark mb-3" style="max-width:18rem;">
+            <div class="card-header">Card Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Dark Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <h6>Border</h6>
+
+<div class="row">
+    <div class="col-3">
+        <div class="card border-primary mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-primary">
+                <h5 class="card-title">Primary Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-secondary mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-secondary">
+                <h5 class="card-title">Secondary Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-success mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Success Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-danger mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-danger">
+                <h5 class="card-title">Danger Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-warning mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-warning">
+                <h5 class="card-title">Warning Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-info mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-info">
+                <h5 class="card-title">Info Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-light mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-black">
+                <h5 class="card-title">Light Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card border-dark mb-3" style="max-width:18rem;">
+            <div class="card-header"></div>
+            <div class="card-body text-dark">
+                <h5 class="card-title">Dark Card Title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <h6>Mixins Utilities</h6>
+
+<div class="row mt-3" style="width:825px; height:510px; background-image: url('https://www.wavecity.in/wp-content/uploads/2017/07/Featured-7-825x510.jpg');">
+    <div class="col-4 mt-3">
+        <div class="card border-info text-black bg-transparent">
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">A bunch of card text goes here to make it look real good.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 mt-3">
+        <div class="card border-info text-black bg-transparent">
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">A bunch of card text goes here to make it look real good.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-4 mt-3">
+        <div class="card border-info text-black bg-transparent">
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">A bunch of card text goes here to make it look real good.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card border-info text-black bg-transparent">
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">A bunch of card text goes here to make it look real good.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card border-info text-black bg-transparent">
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">A bunch of card text goes here to make it look real good.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card border-info text-black bg-transparent">
+            <div class="card-header bg-primary">Header</div>
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">A bunch of card text goes here to make it look real good.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <h5>Card Layout</h5>
+    <h6>Card Groups</h6>
+
+    <div class="card-group mb-3" style="width:600px;">
+        <div class="card" style="width:200px;">
+            <img src="https://via.placeholder.com/100X150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">Card Footers will automatically line up</div>
+        </div>
+        <div class="card" style="width:100px;">
+            <img src="https://via.placeholder.com/100X150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">Card Footers will automatically line up</div>
+        </div>
+        <div class="card" style="width:100px;">
+            <img src="https://via.placeholder.com/100X150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Even if text of each card is a different length... </p>
+            </div>
+            <div class="card-footer">...card footers will automatically line up</div>
+        </div>
+    </div>
+
+    <h6>Card Decks</h6>
+
+    <div class="card-deck mt-3 mb-3">
+        <div class="card">
+            <img src="https://via.placeholder.com/100X150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">Card decks consist of cards of equal...</p>
+            </div>
+            <div class="card-footer">Footers in card decks...</div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/100X150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">width and height but are...</p>
+            </div>
+            <div class="card-footer">will also automatically line up...</div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/100X150.png" alt="" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">separate from one another.</p>
+            </div>
+            <div class="card-footer">with one another.</div>
+        </div>
+    </div>
+
+    <h6>Card Columns</h6>
+
+    <!--Carousel-->
+    <!--A slideshow component for cycling through elements—images or slides of text—like a carousel.-->
+    <h3 class="course-heading">Carousel</h3>
+
+    <h5>Slides Only</h5>
+
+    
+
+    <h5>With Controls</h5>
+    <h5>With Indicators</h5>
+    <h5>With Captions</h5>
+    <h5>Crossfade</h5>
+    <h5>Individual .carousel-item Interval</h5>
+    <h5>Usage</h5>
+    <h6>Via Data Attributes</h6>
+    <h6>Via JavaScript</h6>
+    <h6>Options</h6>
+    <h6>Methods</h6>
+    <h6>Change Transition Duration</h6>
+
+    <!--Collapse content-->
+    <!--Toggle the visibility of content across your project with a few classes and our JavaScript plugins.-->
+    <h3 class="course-heading">Collapse content</h3>
+
+    <h5>Multiple Targets</h5>
+
+    <p>
+        <a class='btn btn-primary' data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle First Element</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-control="multiCollapseExample2">Toggle Second Element</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-control="multiCollapseExample1 multiCollapseExample2">Toggle Both Element</button>
+    </p>
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+            </div>
+        </div>
+    </div>
+
+    <h5>Accordion</h5>
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapse ">Collapsible Group Item #1</button>
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapse ">Collapsible Group Item #2</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapse ">Collapsible Group Item #3</button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <h5>Usage</h5>
+    <h6>Via JavaScript</h6>
+    <div class="row">
+        <div class="col-4">
+            <button class="mt-3 btn btn-primary" onclick="$('#collapsible').collapse('toggle');console.log('click');">Using $('.collapse').collapse('toggle')</button>
+            <p>Slides Up And Down</p>
+            <button class="mt-3 btn btn-danger" onclick="$('#collapsible').toggleClass('show');">Using $(selector).toggleClass('show')</button>
+            <p>Appears and Disappears</p>
+        </div>
+        <div class="col-8 collapse show" id="collapsible">
+            <div class="card-body">
+                <img src="https://atlantis.nyc3.digitaloceanspaces.com/styled/1bec9ec74aac91e70b3ef91fee1fc0f9" alt="" style="width: 550px; height: 200px;">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Dropdown content-->
+    <!--Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.-->
+    <h3 class="course-heading">Dropdown content</h3>
+
+    <h5>Single Button</h5>
+<div class="row">
+    <div class="col-6">
+        <h6>With Button Elements</h6>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Button</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a href="" class="dropdown-item">Action</a>
+                <a href="" class="dropdown-item">Another Action</a>
+                <a href="" class="dropdown-item">A Third Action</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-6">
+        <h6>With Anchor Elements</h6>
+        <div class="dropdown">
+            <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Link</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Another Action</a>
+                <a href="#" class="dropdown-item">A Third Action</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <h5>Styling Dropdown Buttons</h5>
+
+<div class="btn-group">
+    <button type="button" class="m-1 btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Primary
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>  
+
+    <button type="button" class="m-1 btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Secondary
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+    <button type="button" class="m-1 btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Success
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+    <button type="button" class="m-1 btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Warning
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+    <button type="button" class="m-1 btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Danger
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+    <button type="button" class="m-1 btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Info
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+    <button type="button" class="m-1 btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Light
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+    <button type="button" class="m-1 btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dark
+    </button>
+     <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+    </div>
+
+</div>
+
+    <h5>Split Buttons</h5>
+
+    <div class="btn-group">
+
+        <button class="btn btn-primary" type="button">Primary</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-secondary" type="button">Secondary</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-success" type="button">Success</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-info" type="button">Info</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-warning" type="button">Warning</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-danger" type="button">Danger</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-light" type="button">Light</button>
+        <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+        <button class="btn btn-dark" type="button">Dark</button>
+        <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+
+    </div>
+
+    <h5>Sizing</h5>
+
+    <div class="m-2 btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Large Button</button>
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Action</a>
+        </div>
+    </div>
+
+    <div class="m-2 btn-group">
+        <button class="btn btn-secondary btn-lg" type="button">Large Split Buttons</button>
+        <buttton class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </buttton>
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Action</a>
+        </div>
+    </div>
+
+    <div class="m-2 btn-group">
+        <button class="btn btn-secondary btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Medium Button</button>
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Action</a>
+        </div>
+    </div>
+
+    <div class="m-2 btn-group">
+        <button class="btn btn-secondary btn-md">Medium Split Button</button>
+        <button class="btn btn-md btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Action</a>
+        </div>
+    </div>
+
+    <div class="m-2 btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Small Button</button>
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Action</a>
+        </div>
+    </div>
+
+    <div class="m-2 btn-group">
+        <button class="btn btn-secondary btn-sm">Small Split Button</button>
+        <button class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+            <a href="" class="dropdown-item">Action</a>
+        </div>
+    </div>
+
+    <h5>Directions</h5>
+    <h6>Dropup</h6>
+
+
+    <div class="m-3 btn-group dropup">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+        <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+        </div>
+    </div>
+
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-secondary">Dropup Split</button>
+        <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <!-- Dropdown Menu Links Here -->
+        </div>
+    </div>
+
+    <h6>Dropright</h6>
+
+    <div class="m-3 btn-group dropright">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropright</button>
+        <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+        </div>
+    </div>
+
+    <div class="btn-group dropright">
+        <button type="button" class="btn btn-secondary">Dropright Split</button>
+        <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <!-- Dropdown Menu Links Here -->
+        </div>
+    </div>
+
+
+    <h6>Dropleft</h6>
+
+    <div class="m-3 btn-group dropleft">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+        <div class="dropdown-menu">
+            <!-- Dropdown menu links -->
+        </div>
+    </div>
+
+    <div class="btn-group dropleft">
+        <button type="button" class="btn btn-secondary">Dropleft Split</button>
+        <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+        <div class="dropdown-menu">
+            <!-- Dropdown Menu Links Here -->
+        </div>
+    </div>
+
+    <h5>Menu Items</h5>
+
+<div class="row">
+    <div class="col-4">
+
+        <h6>Dropdown Menu As Buttons</h6>
+
+        <div class="m-3 dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" onMouseOver="this.style.backgroundColor='pink'" onMouseOut="this.style.backgroundColor='white'">Action 1</button>
+                <button class="dropdown-item">Action 2</button>
+                <button class="dropdown-item">Action 3</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <h6>Active</h6>
+        <div class="m-3 dropdown">
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Action 1</a>
+                <a href="#" class="dropdown-item active">Active</a>
+                <a href="#" class="dropdown-item">Action 3</a>
+            </div>    
+        </div>
+
+    </div>
+
+    <div class="col-4">
+
+        <h6>Disabled</h6>
+
+        <div class="m-3 dropdown">
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Action 1</a>
+                <a href="" class="dropdown-item disabled">Disabled</a>
+                <a href="#" class="dropdown-item">Action 3</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <h5>Menu Alignment</h5>
+
+<div class="row mb-3">
+    <div class="col-6">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Left Alignment</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">The left side of this...</a>
+                <a href="" class="dropdown-item">Menu will stay against the left...</a>
+                <a href="" class="dropdown-item">Side of the dropdown button.</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Right Alignment</button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="" class="dropdown-item">The right side of this...</a>
+                <a href="" class="dropdown-item">Menu will stay against the right...</a>
+                <a href="" class="dropdown-item">Side of the dropdown button.</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <h6>Responsive Alignment</h6>
+
+<div class="row">
+    <div class="col-6">
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Left-aligned but Right aligned on medium or larger</button>
+            <div class="dropdown-menu dropdown-menu-md-right">
+                <button type="button" class="dropdown-item">Action</button>
+                <button type="button" class="dropdown-item">Another</button>
+                <button type="button" class="dropdown-item">A Third</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Right-aligned but Left-aligned on medium</button>
+            <div class="dropdown-menu dropdown-menu-right dropdown-menu-md-left">
+                <button type="button" class="dropdown-item">Action</button>
+                <button type="button" class="dropdown-item">Another</button>
+                <button type="button" class="dropdown-item">A Third</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <h5>Menu Content</h5>
+
+<div class="row">
+
+    <div class="col-6 mt-3 mb-3">
+        <h6>Headers</h6>
+        
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown With Header</button>
+                <div class="dropdown-menu border-info">
+                    <h6 class="m-1">Dropdown Header</h6>
+                    <a href="" class="dropdown-item">Action 1</a>
+                    <a href="" class="dropdown-item">Action 2</a>
+                    <a href="" class="dropdown-item">Actions 3</a>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="col-6 mt-3 mb-3">
+        <h6>Dividers</h6>
+
+        <div class="dropdown">
+               <button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown With Divider</button>
+               <div class="dropdown-menu">
+                   <a href="" class="dropdown-item">Action 1</a>
+                   <a href="" class="dropdown-item">Action 2</a>
+                   <a href="" class="dropdown-item">Action 3</a>
+                   <div class="dropdown-divider"></div>
+                   <a href="" class="dropdown-item">Action 4</a>
+               </div>
+           </div>   
+
+    </div>
+
+    <div class="col-6 mt-3 mb-3">
+        <h6>Text</h6>
+
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown With Text</button>
+            <div class="dropdown-menu p-4 text-muted border-primary bg-danger" style="max-width:200px;">
+                <p class="bg-dark text-light p-3">This is some example text to show that you can put...</p>
+                <p class="bg-dark text-light p-3">Whatever kind of junk down here that you want.</p>
+                <p class="bg-dark text-light p-3">Plus, you can do cool styles down here</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-6 mt-3 mb-3">
+        <h6>Forms</h6>
+
+        <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi There</button>
+            <div class="dropdown-menu border-primary bg-light">
+                <form action="" class="px-4 py-3">
+                    <div class="form-group">
+                        <label for="exampleDropdownFormEmail1">Email</label>
+                        <input type="email" id="exampleDropdownFormEmail1" class="form-control" placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleDropdownFormPassword1">Password</label>
+                        <input type="Password" id="exampleDropdownFormPassword1" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label for="dropdownCheck" class="form-check-label">Remember Me</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a href="" class="dropdown-item">New Around Here? Sign Up</a>
+                <a href="" class="dropdown-item">Forgot Password?</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <h5>Dropdown Options</h5>
+
+<div class="row">
+    <div class="col-6">
+        <h6>Data-Offset To Change Location of Dropdown</h6>
+        
+        <div class="dropdown m-3">
+            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="50,50">Offset</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a href="" class="dropdown-item">Action 1</a>
+                <a href="" class="dropdown-item">Action 2</a>
+                <a href="" class="dropdown-item">Action 3</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-6">
+
+    <h6>Data-reference To Change Location of Dropdown</h6>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Split Button</button>
+            <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                <a href="" class="dropdown-item">Dropdown</a>
+                <a href="" class="dropdown-item">Is Directly Below</a>
+                <a href="" class="dropdown-item">Parent Element</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+    <h5>Usage</h5>
+    <h6>Via Data Attributes</h6>
+    <p>data-toggle="dropdown" on a link or button allows dropdown functionality.
+    <h6>Via JavaScript</h6>
+    <p><b>When using JavaScript, trigger element must still contain data-toggle="dropdown" attribute!</b></p>
+
+
+    <!--Forms-->
+    <!--Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.-->
+    <h3 class="course-heading">Forms</h3>
+
+    <h5>Overview</h5>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInput">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInput">Password</label>
+            <input type="Password" class="form-control" id="exampleInputPassword1" placeholder="Password"></div>
+        <div class="form-group form-check">
+            <input type="checkbox" for="exampleCheck1" class="form-check-input" id="exampleCheck1">
+            <label for="exampleCheck1" class="form-check-label">Remember Me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <h5>Form Controls</h5>
+
+    <p><b>.form-control is used for Inputs, Selects, and Textareas.</b></p>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Example Select</label>
+            <select class="form-control" id="exampleFormControl">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2" id="exampleFormControlSelect2">Example Multiple Select</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1" id="exampleFormControlTextarea1"></label>
+            <textarea id="exampleFormControlTextarea1" rows="3" class="form-control"></textarea>
+        </div>
+    </form>
+
+    <p><b>.form-control-file is used for file inputs</b></p>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Example File Input</label>
+            <input type="file" id="exampleFormControlFile1"></div>
+    </form>
+
+
+    <h5>Sizing</h5>
+
+    <div class="row">
+        <div class="col-6">
+            <input type="text" class="m-2 form-control form-control-lg" placeholder=".form-control-lg">
+            <input type="text" class="m-2 form-control" placeholder="Default Input">
+            <input type="text" class="m-2 form-control form-control-sm" placeholder=".form-control-sm">
+        </div>
+        <div class="col-6">
+            <select class="m-1 form-control-lg">
+                <option>Large Select</option>
+            </select>
+            <select class="m-1 form-control">
+                <option>Default Select</option>
+            </select>
+            <select class="m-1 form-control-sm">
+                <option>Small Select</option>
+            </select>
+            </select>
+        </div>
+    </div>
+
+
+
+    <h5>Readonly</h5>
+
+    <input type="text" class="form-control" placeholder="Readonly input here..." readonly="true">
+
+
+    <h6 class="mt-5"><b>Readonly Plain Text</b></h6>
+
+    <form>
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+         <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </form>
+
+    <p class="mt-5"><b>Inline Readonly Plaintext</b></p>
+
+    <form>
+        <div class="form-group mb-2">
+            <label for="staticEmail2" class="sr-only">Email</label>
+            <input type="text" readonly="" class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Confirm Identity</button>
+    </form>
+
+    <h5>Range Inputs</h5>
+
+    <form action="">
+        <div class="form-group">
+            <label for="formControlRange">Example Range Input</label>
+            <input type="range" id="formControlRange" class="form-control-range" min="0" max="100" step="1" value="10" list="tickmarks">
+        </div>
+    </form>
+
+
+
+    <h5>Checkboxes and Radios</h5>
+    <h6>Default</h6>
+<div class="row">
+    <div class='col-6'>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="defaultCheck1">
+            <label for="defaultCheck1" class="form-check-label">Default Checkbox</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="defaultCheck2" disabled>
+            <label for="defaultCheck2" class="form-check-label">Disabled Checkbox</label>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="exampleRadios" id="exampleRadios1" value="option" checked>
+            <label for="exampleRadios1" class="form-check-label">Default Radio</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="exampleRadios" id="exampleRadios2" value="option">
+            <label for="exampleRadios2" class="form-check-label">Second Default Radio</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="exampleRadios" id="exampleRadios3" value="option" disabled>
+            <label for="exampleRadios3" class="form-check-label">Disabled Radio</label>
+        </div>
+    </div>
+</div>
+
+
+    <h6>Inline</h6>
+
+<div class="row mb-3">
+    <div class="col-6">
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" value="option1" id="inlineCheckbox1">
+            <label for="inlineCheckbox1" class="form-check-label">1</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" value="option2" id="inlineCheckbox2">
+            <label for="inlineCheckbox2" class="form-check-label">2</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" value="option3" id="inlineCheckbox3">
+            <label for="inlineCheckbox3" class="form-check-label">3 (disabled)</label>
+        </div>
+
+    </div>
+    <div class="col-6">
+        
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="option1" id="inlineRadio1" disabled>
+            <label for="inlineRadio1" class="form-check-label">1</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="option2" id="inlineRadio2">
+            <label for="inlineRadio2" class="form-check-label">2</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" value="option3" id="inlineRadio3" disabled>
+            <label for="inlineRadio3" class="form-check-label">3 (disabled)</label>
+        </div>
+
+    </div>
+</div>
+
+
+    <h6>Without Labels</h6>
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input position-static" id="blankCheck">
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input position-static" id="blankRadio">
+    </div>
+
+
+    <h5>Layout</h5>
+    <h6><b>Form Groups (.form-group)</b></h6>
+
+    <form class="mt-3">
+        <div class="form-group">
+            <label for="formGroupExampleInput1">Example Label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput1" placeholder="Example Input">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Another Label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another Input">
+        </div>
+    </form>
+
+    <h5>Form Grid</h5>
+
+    <form class='mb-3'>
+        <p>Two .col divs inside a .row div</p>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+        </div>
+    </form>
+
+    <h6><b>Form Row (.form-row)</b></h6>
+    <p> Tighter and more compact</p>
+
+
+    <form class="mb-3">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First Name">
+            </div>
+        </div>
+    </form>
+
+
+    <h6>Horizontal Form</h6>
+    <p>Use .col-form-label to align label with controls</p>
+
+    
+    <p>Horizontal Form Label Sizing</p>
+    <h6>Column Sizing</h6>
+    <h6>Auto-Sizing</h6>
+    <h6>Inline Forms</h6>
+    <h5>Help Text</h5>
+    <h5>Disabled Forms</h5>
+    <h5>Validation</h5>
+    <h5>Custom Styles</h5>
+    <h6>Browser Defaults</h6>
+    <h5>Supported Elements</h5>
+    <h6>Tooltips</h6>
+    <h6>Customizing</h6>
+    <h5>Custom Forms</h5>
+    <h6>Checkboxes</h6>
+    <h6>Radios</h6>
+    <h6>Inline</h6>
+    <h6>Disabled</h6>
+    <h6>Switches</h6>
+    <h6>Select Menu</h6>
+    <h6>Range</h6>
+    <h6>File Browser</h6>
+
+
+
+
+
+
+
+
+
+
+    <!--Jumbotron-->
+    <!--Lightweight, flexible component for showcasing hero unit style content.-->
+    <h3 class="course-heading">Jumbotron</h3>
+
+    <!--Nav-->
+    <!--The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.-->
+    <h3 class="course-heading">Nav</h3>
+
+    <!--Navbar-->
+    <h3 class="course-heading">Navbar</h3>
+
+    
+    <!--Grid-->
+    <!--powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system-->
+    <h3 class="course-heading">Grid System</h3>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
